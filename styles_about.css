@@ -1,0 +1,238 @@
+/* Default styles */
+
+/* Navbar styles */
+.navbar {
+  /* overflow: hidden; */
+  background-color: white;
+  margin: 20px 0; /* Increase margin on top */
+  display: flex;
+  justify-content: center; /* Center navbar items */
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 132px;
+  height: 70px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-family: 'Chewy', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+/* Individual button colors */
+#home {
+  color: rgb(248, 89, 200);
+}
+
+#home:hover {
+  background-color: red;
+}
+
+#facilities {
+  color: skyblue;
+}
+
+#facilities:hover {
+  background-color: pink;
+}
+
+#activities {
+  color: red;
+}
+
+#activities:hover {
+  background-color: blue;
+}
+
+#events {
+  color: rgb(90, 218, 250);
+}
+
+#events:hover {
+  background-color: green;
+}
+
+#gallery {
+  color: rgb(11, 194, 72);
+}
+
+#gallery:hover {
+  background-color: orange;
+}
+
+#news {
+  color: rgb(223, 164, 54);
+}
+
+#news:hover {
+  background-color: purple;
+}
+
+#admission {
+  color: red;
+}
+
+#admission:hover {
+  background-color: violet;
+}
+
+#contact {
+  color: rgb(248, 89, 200);
+}
+
+#contact:hover {
+  background-color: skyblue;
+}
+
+/* Dropdown container */
+.dropdown,
+.dropdownact,
+.dropdownev,
+.dropdowngl {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn,
+.dropbtnactact,
+.dropbtnactev,
+.dropbtnglgl {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-family: 'Chewy', cursive;
+  margin: 0;
+  padding: 14px 20px;
+  color: #12b812;
+  background-color: inherit;
+}
+
+/* Dropdown content */
+.dropdown-content,
+.dropdown-contentact,
+.dropdown-contentev,
+.dropdown-contentgl {
+  display: none;
+  position: absolute;
+  background-color: white; /* Set background color to white */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a,
+.dropdown-contentact a,
+.dropdown-contentev a,
+.dropdown-contentgl a {
+  color: rgb(238, 169, 20);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color on hover inside dropdown */
+.dropdown-content a:hover,
+.dropdown-contentact a:hover,
+.dropdown-contentev a:hover,
+.dropdown-contentgl a:hover {
+  background-color: #be1f1f;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content,
+.dropdownact:hover .dropdown-contentact,
+.dropdownev:hover .dropdown-contentev,
+.dropdowngl:hover .dropdown-contentgl {
+  display: block;
+}
+
+/* Responsive styles for navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 10px;
+    width: auto;
+  }
+
+  .dropdown,
+  .dropdownact,
+  .dropdownev,
+  .dropdowngl {
+    display: block;
+    position: static; /* Change position to static for dropdowns */
+  }
+
+  .dropdown-content,
+  .dropdown-contentact,
+  .dropdown-contentev,
+  .dropdown-contentgl {
+    display: none;
+    position: static; /* Change position to static for dropdown content */
+    background-color: white; /* Set background color to white */
+    width: 100%; /* Make dropdown content full width */
+    box-shadow: none; /* Remove box shadow */
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center align text */
+  }
+
+  .dropdown-content a,
+  .dropdown-contentact a,
+  .dropdown-contentev a,
+  .dropdown-contentgl a {
+    padding: 10px 20px; /* Adjust padding */
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdownact:hover .dropdown-contentact,
+  .dropdownev:hover .dropdown-contentev,
+  .dropdowngl:hover .dropdown-contentgl {
+    display: block; /* Display dropdown content on hover */
+  }
+}
+    .image-container img {
+      display: block;
+      height: 300px;
+      width: 100%;
+   
+      margin: 0px 0px 0px 0px;
+      padding-top: 5px;
+      
+      
+  }
+.aboutus{
+  font-size: 20px;
+  color: rgb(190, 18, 182);
+  background-color: peachpuff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  padding: 2px 10px 2px 10px;
+  margin: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+
+}
+#abh1{
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(150, 94, 94);
+  color: white;
+  border-radius: 4px;
+}
+

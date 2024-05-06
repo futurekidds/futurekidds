@@ -1,0 +1,625 @@
+/* Default styles */
+
+/* Navbar styles */
+.navbar {
+  /* overflow: hidden; */
+  background-color: white;
+  margin: 20px 0;
+  /* Increase margin on top */
+  display: flex;
+  justify-content: center;
+  /* Center navbar items */
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 132px;
+  height: 70px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-family: 'Chewy', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+/* Individual button colors */
+#home {
+  color: rgb(248, 89, 200);
+}
+
+#home:hover {
+  background-color: red;
+}
+
+#facilities {
+  color: skyblue;
+}
+
+#facilities:hover {
+  background-color: pink;
+}
+
+#activities {
+  color: red;
+}
+
+#activities:hover {
+  background-color: blue;
+}
+
+#events {
+  color: rgb(90, 218, 250);
+}
+
+#events:hover {
+  background-color: green;
+}
+
+#gallery {
+  color: rgb(11, 194, 72);
+}
+
+#gallery:hover {
+  background-color: orange;
+}
+
+#news {
+  color: rgb(223, 164, 54);
+}
+
+#news:hover {
+  background-color: purple;
+}
+
+#admission {
+  color: red;
+}
+
+#admission:hover {
+  background-color: violet;
+}
+
+#contact {
+  color: rgb(248, 89, 200);
+}
+
+#contact:hover {
+  background-color: skyblue;
+}
+
+/* Dropdown container */
+.dropdown,
+.dropdownact,
+.dropdownev,
+.dropdowngl {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn,
+.dropbtnactact,
+.dropbtnactev,
+.dropbtnglgl {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-family: 'Chewy', cursive;
+  margin: 0;
+  padding: 14px 20px;
+  color: #12b812;
+  background-color: inherit;
+}
+
+/* Dropdown content */
+.dropdown-content,
+.dropdown-contentact,
+.dropdown-contentev,
+.dropdown-contentgl {
+  display: none;
+  position: absolute;
+  background-color: white;
+  /* Set background color to white */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a,
+.dropdown-contentact a,
+.dropdown-contentev a,
+.dropdown-contentgl a {
+  color: rgb(238, 169, 20);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color on hover inside dropdown */
+.dropdown-content a:hover,
+.dropdown-contentact a:hover,
+.dropdown-contentev a:hover,
+.dropdown-contentgl a:hover {
+  background-color: #be1f1f;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content,
+.dropdownact:hover .dropdown-contentact,
+.dropdownev:hover .dropdown-contentev,
+.dropdowngl:hover .dropdown-contentgl {
+  display: block;
+}
+
+/* Responsive styles for navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 10px;
+    width: auto;
+  }
+
+  .dropdown,
+  .dropdownact,
+  .dropdownev,
+  .dropdowngl {
+    display: block;
+    position: static;
+    /* Change position to static for dropdowns */
+  }
+
+  .dropdown-content,
+  .dropdown-contentact,
+  .dropdown-contentev,
+  .dropdown-contentgl {
+    display: none;
+    position: static;
+    /* Change position to static for dropdown content */
+    background-color: white;
+    /* Set background color to white */
+    width: 100%;
+    /* Make dropdown content full width */
+    box-shadow: none;
+    /* Remove box shadow */
+    padding: 10px 0;
+    /* Add padding */
+    text-align: center;
+    /* Center align text */
+  }
+
+  .dropdown-content a,
+  .dropdown-contentact a,
+  .dropdown-contentev a,
+  .dropdown-contentgl a {
+    padding: 10px 20px;
+    /* Adjust padding */
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdownact:hover .dropdown-contentact,
+  .dropdownev:hover .dropdown-contentev,
+  .dropdowngl:hover .dropdown-contentgl {
+    display: block;
+    /* Display dropdown content on hover */
+  }
+}
+
+.image-container img {
+  display: block;
+  height: 300px;
+  width: 100%;
+
+  margin: 0px 0px 0px 0px;
+  padding-top: 5px;
+
+
+}
+
+.aboutus {
+  background-color: #9bf6ff;
+  font-size: 25px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 10px;
+  border-radius: 4px;
+ 
+}
+
+#abh1 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(150, 94, 94);
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+
+}
+
+/* news */
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Align items with space between them */
+  padding: 20px;
+}
+#latest_update ul li {
+  font-size: 20px;
+  /* text-align: center; */
+ 
+}
+
+
+.aboutus {
+  flex: 1; /* Take up available space */
+  margin-right: 20px; /* Add some space between containers */
+  padding-right: 10px;
+}
+
+#latest_update {
+  flex: 1; /* Take up available space */
+}
+
+/* Style for the updates list */
+#latest_update ul {
+  list-style: none;
+  padding: 0;
+  /* border: 2px solid red; */
+  /* padding-bottom: 100px; */
+
+  
+}
+
+#latest_update ul li {
+  margin-bottom: 10px;
+  padding: 10px; /* Add padding for better readability */
+  border-bottom: 1px solid #ccc; /* Add border between list items */
+  border: 2px solid cornflowerblue;
+  padding-bottom: 10px;
+  
+}
+
+/* Additional styling for the Latest Updates heading */
+#h1news {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/* Different background colors for each update item */
+#latest_update ul li:nth-child(1) {
+  background-color: #ffadad; /* Light Red */
+}
+
+#latest_update ul li:nth-child(2) {
+  background-color: #ffd6a5; /* Light Orange */
+}
+
+#latest_update ul li:nth-child(3) {
+  background-color: #fdffb6; /* Light Yellow */
+}
+
+#latest_update ul li:nth-child(4) {
+  background-color: #caffbf; /* Light Green */
+}
+
+#latest_update ul li:nth-child(5) {
+  background-color: #9bf6ff; /* Light Blue */
+}
+#h1news {
+  font-size: 30px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  /* border: 2px solid red; */
+  
+}
+
+
+/* Additional styling for the Latest Updates heading */
+
+/* .conatiners {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+/* justify-content: space-evenly; */
+/* justify-content: center; */
+
+ @media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items with space between them */
+    padding: 20px;
+  }
+  #latest_update ul li {
+    font-size: 20px;
+    /* text-align: center; */
+   
+  }
+  
+  
+ 
+  
+  #latest_update {
+    flex: 1; /* Take up available space */
+  }
+  
+  /* Style for the updates list */
+  #latest_update ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #latest_update ul li {
+    margin-bottom: 10px;
+    padding: 10px; /* Add padding for better readability */
+    border-bottom: 1px solid #ccc; /* Add border between list items */
+  }
+  
+  /* Additional styling for the Latest Updates heading */
+ 
+  
+  /* Different background colors for each update item */
+  #latest_update ul li:nth-child(1) {
+    background-color: #ffadad; /* Light Red */
+  }
+  
+  #latest_update ul li:nth-child(2) {
+    background-color: #ffd6a5; /* Light Orange */
+  }
+  
+  #latest_update ul li:nth-child(3) {
+    background-color: #fdffb6; /* Light Yellow */
+  }
+  
+  #latest_update ul li:nth-child(4) {
+    background-color: #caffbf; /* Light Green */
+  }
+  
+  #latest_update ul li:nth-child(5) {
+    background-color: #9bf6ff; /* Light Blue */
+  }
+  #h1news {
+    font-size: 20px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+  
+    
+  }
+  
+.aboutus {
+  background-color: #9bf6ff;
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 100%; */
+  padding-right: 10px;
+  padding-left: 10px3;
+
+  
+ 
+  border-radius: 4px;
+}
+  
+  
+
+}
+
+/* footer css */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:   white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  white;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
